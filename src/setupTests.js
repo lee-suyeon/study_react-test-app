@@ -13,4 +13,4 @@ beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 
 // 테스트 종료 후 서버 clean up
-afterEach(() => server.close());
+afterAll(() => server.close());
