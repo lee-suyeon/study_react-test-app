@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import OrderPage from './pages/OrderPage/OrderPage';
 
 function App() {
   return (
-    <div></div>
+    <div style={{ padding: "4rem" }}>
+      <OrderPage />
+    </div>
   );
 }
 
