@@ -74,6 +74,12 @@ test("From order to order completion", async () => {
   });
   userEvent.click(firstPageButton);
 
+  const productsTotal = screen.getByText("상품 총 가격: 0");
+  expect(productsTotal).toBeInTheDocument();
+
+  const optionsTotal = screen.getByText("옵션 총 가격: 0");
+  expect(optionsTotal).toBeInTheDocument();
+
   await waitFor(() => {
     screen.getByRole("spinbutton", { name: "America" });
   })
